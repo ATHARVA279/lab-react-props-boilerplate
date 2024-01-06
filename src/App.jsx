@@ -1,31 +1,6 @@
 import './App.css';
-import elephant from "./images/elephant.jpeg";
 
-const imageData = ()=>{
-  let data = [
-    {
-      id:1,
-      img:elephant
-    },
-    {
-      id:2,
-      img:elephant
-    },
-    {
-      id:3,
-      img:elephant
-    },
-    {
-      id:4,
-      img:elephant
-    }
-  ]
-  return data;
-}
-
-let data = imageData()
-
-function App() {
+function App(props) {
   // code here
 
   let headingStyle = {
@@ -37,6 +12,8 @@ function App() {
     gridTemplateColumns:"repeat(2,1fr)",
     alignSelf:"center"
   }
+
+  let data = props.props
 
   return(
     <>
