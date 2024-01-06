@@ -9,8 +9,8 @@ import data from "./Data"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App props={data}/>   
+    {/* <App props={data}/>    */}
     {/* change the above line - for interchaning between App and AppClass */}
-    {/* <AppClass /> */}
+    <AppClass props={data}/>
   </React.StrictMode>
 );
